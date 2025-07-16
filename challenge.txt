@@ -1,0 +1,94 @@
+This is designed to take no more than 2–4 hours. We care most about how you think, how you structure your code, and how you make decisions — not polish or perfection (though working output is still important).
+
+🧠 The Scenario
+
+
+Families constantly receive unstructured messages — from emails, texts, school flyers — that include time-sensitive logistics:
+
+> "Chuck’s soccer game moved to Thursday at 3:30pm at Sunset Field"
+
+
+Your challenge is to design and build a small system that helps a user detect and act on that kind of message intelligently and efficiently — with particular focus on what happens *after* the event is created.
+
+
+🔢 What You Should Build
+
+
+Please build a small system (backend, frontend, CLI, or hybrid) that:
+
+
+1. **Accepts unstructured event input** (you choose the method: plain text, API call, text box, etc.)
+
+2. **Parses the input** into structured data:
+
+   - e.g. `title`, `start_time`, `end_time`, `location`, optional `notes`
+
+3. **Checks for calendar conflicts** (using mocked data or an in-memory list)
+
+4. **After the event is created, handles follow-on logic**, such as:
+
+   - Creating and storing reminder preferences (e.g., “night before”, “30 min before”)
+
+   - Sharing the event with others (e.g., generate a sharable payload or log)
+
+   - Simulating an event timeline (e.g., `created`, `shared`, `reminder_sent`)
+
+   - Managing status flags (e.g., `isConfirmed`, `isReminded`, `wasShared`)
+
+5. **Exposes this as a simple UI or API** — your call
+
+
+You can mock the AI parsing (or use OpenAI/Gemini if you'd like). Focus on the product logic, structure, and system behavior.
+
+
+
+😊 What We’re Looking For
+
+
+- Thoughtful architecture: how you structure your app, data, and logic
+
+- Product thinking: how you simplify the experience for a real person
+
+- Code clarity: readable, well-organized, easy to reason about
+
+- Decision making: what you prioritized and why
+
+- Backend extensibility: how you model and handle the event lifecycle
+
+
+😊 What We Want to Jam on
+
+
+- Your choice on LLMs
+
+- MCP protocols
+
+- Agentic workflows that could flow out of this system
+
+- API integrations with other platforms
+
+- What we build that is unique or differentiating for us vs what is averaged out by general use of LLMs
+
+
+⏱️ Time Guidance
+
+
+Please keep this to **no more than 4 hours**. We don’t expect a finished product — just clear thinking and smart choices.
+
+
+
+📆 Submission
+
+
+Please share a GitHub repo or zipped folder, along with a brief **README** that includes:
+
+- How to run your project
+
+- What’s mocked vs functional
+
+- What tradeoffs or assumptions you made
+
+- What you'd build next if this were production-ready
+
+
+Looking forward to seeing how you approach this!
